@@ -100,13 +100,17 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  /************ 20201116 Logic code for BluePill Board ...BEGIN *********/
-	  HAL_Delay(2000);
+	  HAL_Delay(200);
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
-	  HAL_Delay(1000);
+	  HAL_Delay(100);
+	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
+	  HAL_Delay(200);
+	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
+	  HAL_Delay(500);
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
 	  HAL_Delay(2000);
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
-	  HAL_Delay(500);
+	  HAL_Delay(1000);
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
 	  /************ 20201116 Logic code for BluePill Board ...END *********/
   }
