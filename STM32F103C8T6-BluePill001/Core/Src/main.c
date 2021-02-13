@@ -106,7 +106,7 @@ int main(void)
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
 	  HAL_Delay(2000);
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
-	  HAL_Delay(4000);
+	  HAL_Delay(500);
 	  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
 	  /************ 20201116 Logic code for BluePill Board ...END *********/
   }
